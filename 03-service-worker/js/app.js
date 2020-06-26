@@ -6,23 +6,23 @@ if ( navigator.serviceWorker ) {
             .then( reg => {
 
                 // setTimeout(() => {
-                    
+
                 //     reg.sync.register('posteo-gatitos');
                 //     console.log('Se enviaron fotos de gatitos al server');
 
                 // }, 3000);
                 Notification.requestPermission().then( result => {
-            
+
                     console.log(result);
-                    reg.showNotification('Hola Mundo!');
-                    
-            
+                    reg.showNotification('Hola Mundo test!');
+
+
                 });
 
             });
 
 
-            
+
 
 }
 
